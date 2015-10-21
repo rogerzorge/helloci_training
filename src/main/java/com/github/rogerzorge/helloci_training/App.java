@@ -1,13 +1,17 @@
-package com.github.rogerzorge.helloci_training;
+package com.github.vitalliuss.helloci;
 
 /**
- * Hello world!
+ * Hello CI!
  *
  */
 public class App 
 {
     public static void main( String[] args )
     {
-        System.out.println( "Hello World!" );
+        System.out.println( "Hello CI!" );
+    }
+    
+    public static void doNothing() {
+    	// do nothing
     }
 }

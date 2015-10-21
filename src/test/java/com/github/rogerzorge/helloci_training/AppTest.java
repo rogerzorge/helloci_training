@@ -1,38 +1,39 @@
-package com.github.rogerzorge.helloci_training;
+package com.github.vitalliuss.helloci;
 
-import junit.framework.Test;
-import junit.framework.TestCase;
-import junit.framework.TestSuite;
+
+import static org.junit.Assert.*;
+import org.junit.Ignore;
+import org.junit.Test;
 
 /**
  * Unit test for simple App.
+ * @author vitali_shulha
  */
-public class AppTest 
-    extends TestCase
-{
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public AppTest( String testName )
-    {
-        super( testName );
-    }
+public class AppTest {
 
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
-    {
-        return new TestSuite( AppTest.class );
-    }
+	@Test
+	public void testShoudBePassed() {
+		assertTrue(true);
+	}
 
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
-    {
-        assertTrue( true );
-    }
+	@Test
+	public void testShouldBeFailed() {
+		assertTrue(false);
+	}
+
+	@Ignore("Not implemented yet")
+	@Test
+	public void testShouldBeSKipped() {
+		assertTrue(true);
+	}
+	
+	@Test
+	public void testAnotherMethod() {
+		App.doNothing();
+	}
+	
+	@Test
+	public void testAnotherClass() {
+		EmptyClass.emptyMethod();
+	}
 }
