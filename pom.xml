@@ -6,7 +6,7 @@
   <packaging>jar</packaging>
   <version>1.0.001</version>
   <name>helloci_training</name>
-  <url>http://maven.apache.org</url>
+  <url>https://github.com/rogerzorge/helloci_training.git</url>
   <dependencies>
     <dependency>
       <groupId>junit</groupId>
